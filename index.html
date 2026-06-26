@@ -27,6 +27,13 @@
   <body>
     <main class="page">
       <header class="navbar">
+        <!-- Control del menú hamburguesa -->
+        <input
+          class="mobile-menu-toggle"
+          id="mobileMenuToggle"
+          type="checkbox"
+        />
+
         <a class="brand" href="#" aria-label="Technova homepage">
           <span class="brand__mark" aria-hidden="true">
             <span class="brand__shine"></span>
@@ -74,7 +81,11 @@
             </svg>
           </button>
 
-          <button class="icon-button" type="button" aria-label="Account">
+          <button
+            class="icon-button icon-button--account"
+            type="button"
+            aria-label="Account"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="8" r="4"></circle>
               <path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path>
@@ -90,12 +101,24 @@
               <path
                 d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H6"
               ></path>
+
               <circle cx="10" cy="20" r="1"></circle>
               <circle cx="17" cy="20" r="1"></circle>
             </svg>
 
             <span class="cart-count">2</span>
           </button>
+
+          <!-- Botón hamburguesa -->
+          <label
+            class="menu-toggle"
+            for="mobileMenuToggle"
+            aria-label="Open or close navigation menu"
+          >
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+          </label>
         </div>
       </header>
 
@@ -143,6 +166,7 @@
                     <path
                       d="M12 3 4.5 6v5.5c0 4.7 3.2 8.7 7.5 9.5 4.3-.8 7.5-4.8 7.5-9.5V6L12 3Z"
                     ></path>
+
                     <path d="m9 12 2 2 4-5"></path>
                   </svg>
                 </div>
