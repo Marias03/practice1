@@ -704,7 +704,7 @@ svg {
   height: 14px;
   place-items: center;
 
-  content: "âœ“";
+  content: "✓";
 
   color: var(--accent-light);
   border: 1px solid currentColor;
@@ -1001,7 +1001,7 @@ svg {
   border-radius: 50%;
 }
 
-.camera-sensor {
+.camera-lidar {
   position: absolute;
   right: 13%;
   bottom: 11%;
